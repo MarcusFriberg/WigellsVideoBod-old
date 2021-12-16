@@ -1,5 +1,4 @@
 package com.edusystems.entities;
-
 // Imports
 import javax.persistence.*;
 import java.sql.Date;
@@ -35,6 +34,9 @@ public class Customer {
 
     @Column(name = "last_update")
     private Date lastUpdate;
+
+    public Customer() {
+    }
 
     public Customer(int storeId, String firstName, String lastName, String email, String addressId, int active) {
         this.storeId = storeId;
