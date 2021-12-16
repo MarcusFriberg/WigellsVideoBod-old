@@ -20,6 +20,10 @@ public class Country {
     public Country() {
     }
 
+    public Country(String country) {
+        this.country = country;
+    }
+
     //Setters
     public void setCountry(String country) {
         this.country = country;
